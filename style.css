@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+
+body {
+    background-image: linear-gradient(rgba(43, 35, 93, 0.7),rgba(23, 75, 52, 0.7)), url('images/background.png');
+    background-size: cover;
+    background-position: center; /* Centers the image horizontally and vertically */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Fixes the background image position */
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.card{
+    width:80%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba,#5b548a);
+    color: #ebfffc;
+    margin:20;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    margin: 100px auto 0;
+} 
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    height:40px;
+    width: 80%;
+    border-radius: 20px;
+    border:#5b548a;
+    padding-left: 10px;
+    font-size: larger;
+    flex: 1;
+    margin-right: 16px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.search button img{
+    height: 22px;
+}
+
+.weather_icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400 ;
+    margin-top: 10px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 20px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind{
+    font-size: 22px;
+    font-style: italic;
+}
+.weather{
+    display: none;
+}
+
+.error{
+    text-align: left;
+    font-size: 12px;
+    margin-top: 8px;
+    display: none;
+}
